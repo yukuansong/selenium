@@ -1,0 +1,220 @@
+[
+  {
+    "description": "  I can search for and buy workwear",
+    "elements": [
+      {
+        "id": "shop-for-workwear;view-product-detail",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "View product detail",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I am on the Mammoth Workwear home page",
+            "result": {
+              "status": "failed",
+              "duration": 4291887817,
+              "error_message": "Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:65298\n    at ClientRequest.<anonymous> (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\http\\index.js:238:15)\n    at emitOne (events.js:116:13)\n    at ClientRequest.emit (events.js:211:7)\n    at Socket.socketErrorListener (_http_client.js:387:9)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)\nFrom: Task: WebDriver.manage().window().maximize()\n    at thenableWebDriverProxy.schedule (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\lib\\webdriver.js:815:17)\n    at Window.maximize (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1590:25)\n    at new module.exports (C:\\Users\\ysong\\test\\BDD ui integration\\runtime\\chromeDriver.js:22:30)\n    at getDriverInstance (C:\\Users\\ysong\\test\\BDD ui integration\\runtime\\world.js:54:22)\n    at C:\\Users\\ysong\\test\\BDD ui integration\\runtime\\world.js:184:29\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)"
+            },
+            "line": 6,
+            "match": {
+              "location": "integration\\step-definitions\\buy-workwear-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click navigation item \"Safety Boots\"",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "match": {
+              "location": "integration\\step-definitions\\buy-workwear-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click product item \"Timberland Pro Euro Hiker 2G Safety Boots\"",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "match": {
+              "location": "integration\\step-definitions\\buy-workwear-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see product detail with title \"Timberland Pro Euro Hiker 2G Safety Boots\"",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "match": {
+              "location": "integration\\step-definitions\\buy-workwear-steps.js:21"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "failed",
+              "duration": 1017068110,
+              "error_message": "Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:65298\n    at ClientRequest.<anonymous> (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\http\\index.js:238:15)\n    at emitOne (events.js:116:13)\n    at ClientRequest.emit (events.js:211:7)\n    at Socket.socketErrorListener (_http_client.js:387:9)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)\nFrom: Task: WebDriver.takeScreenshot()\n    at thenableWebDriverProxy.schedule (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\lib\\webdriver.js:815:17)\n    at thenableWebDriverProxy.takeScreenshot (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1085:17)\n    at createWorld.<anonymous> (C:\\Users\\ysong\\test\\BDD ui integration\\runtime\\world.js:226:27)\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)"
+            },
+            "hidden": true,
+            "match": {
+              "location": "integration\\runtime\\world.js:221"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@workwear",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "shop-for-workwear",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Shop for Workwear",
+    "tags": [
+      {
+        "name": "@workwear",
+        "line": 1
+      }
+    ],
+    "uri": "C:/Users/ysong/test/BDD ui integration/features/buy-workwear.feature"
+  },
+  {
+    "description": "  As an internet user\n  In order to find out more about the itunes vote cards app\n  I want to be able to search for information about the itunes vote cards app",
+    "elements": [
+      {
+        "id": "searching-for-vote-cards-app;google-search-for-vote-cards-app",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Google search for vote cards app",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I search Google for \"itunes vote cards app\"",
+            "result": {
+              "status": "failed",
+              "duration": 4139036127,
+              "error_message": "Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:65298\n    at ClientRequest.<anonymous> (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\http\\index.js:238:15)\n    at emitOne (events.js:116:13)\n    at ClientRequest.emit (events.js:211:7)\n    at Socket.socketErrorListener (_http_client.js:387:9)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)\nFrom: Task: WebDriver.manage().window().maximize()\n    at thenableWebDriverProxy.schedule (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\lib\\webdriver.js:815:17)\n    at Window.maximize (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1590:25)\n    at new module.exports (C:\\Users\\ysong\\test\\BDD ui integration\\runtime\\chromeDriver.js:22:30)\n    at getDriverInstance (C:\\Users\\ysong\\test\\BDD ui integration\\runtime\\world.js:54:22)\n    at C:\\Users\\ysong\\test\\BDD ui integration\\runtime\\world.js:184:29\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)"
+            },
+            "line": 8,
+            "match": {
+              "location": "integration\\step-definitions\\google-search-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see \"Vote Cards\" in the results",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "match": {
+              "location": "integration\\step-definitions\\google-search-steps.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "failed",
+              "duration": 1023499153,
+              "error_message": "Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:65298\n    at ClientRequest.<anonymous> (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\http\\index.js:238:15)\n    at emitOne (events.js:116:13)\n    at ClientRequest.emit (events.js:211:7)\n    at Socket.socketErrorListener (_http_client.js:387:9)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)\nFrom: Task: WebDriver.takeScreenshot()\n    at thenableWebDriverProxy.schedule (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\lib\\webdriver.js:815:17)\n    at thenableWebDriverProxy.takeScreenshot (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1085:17)\n    at createWorld.<anonymous> (C:\\Users\\ysong\\test\\BDD ui integration\\runtime\\world.js:226:27)\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)"
+            },
+            "hidden": true,
+            "match": {
+              "location": "integration\\runtime\\world.js:221"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "searching-for-vote-cards-app;google-search-for-course-of-life-app",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Google search for course of life app",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I search Google for \"CourseOf.Life\"",
+            "result": {
+              "status": "failed",
+              "duration": 4362337320,
+              "error_message": "Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:65298\n    at ClientRequest.<anonymous> (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\http\\index.js:238:15)\n    at emitOne (events.js:116:13)\n    at ClientRequest.emit (events.js:211:7)\n    at Socket.socketErrorListener (_http_client.js:387:9)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)\nFrom: Task: WebDriver.manage().window().maximize()\n    at thenableWebDriverProxy.schedule (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\lib\\webdriver.js:815:17)\n    at Window.maximize (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1590:25)\n    at new module.exports (C:\\Users\\ysong\\test\\BDD ui integration\\runtime\\chromeDriver.js:22:30)\n    at getDriverInstance (C:\\Users\\ysong\\test\\BDD ui integration\\runtime\\world.js:54:22)\n    at C:\\Users\\ysong\\test\\BDD ui integration\\runtime\\world.js:184:29\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)"
+            },
+            "line": 12,
+            "match": {
+              "location": "integration\\step-definitions\\google-search-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see some results",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "match": {
+              "location": "integration\\step-definitions\\google-search-steps.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "failed",
+              "duration": 1027775701,
+              "error_message": "Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:65298\n    at ClientRequest.<anonymous> (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\http\\index.js:238:15)\n    at emitOne (events.js:116:13)\n    at ClientRequest.emit (events.js:211:7)\n    at Socket.socketErrorListener (_http_client.js:387:9)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)\nFrom: Task: WebDriver.takeScreenshot()\n    at thenableWebDriverProxy.schedule (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\lib\\webdriver.js:815:17)\n    at thenableWebDriverProxy.takeScreenshot (C:\\Users\\ysong\\test\\BDD ui integration\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1085:17)\n    at createWorld.<anonymous> (C:\\Users\\ysong\\test\\BDD ui integration\\runtime\\world.js:226:27)\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)"
+            },
+            "hidden": true,
+            "match": {
+              "location": "integration\\runtime\\world.js:221"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "searching-for-vote-cards-app",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Searching for vote cards app",
+    "tags": [
+      {
+        "name": "@search",
+        "line": 1
+      }
+    ],
+    "uri": "C:/Users/ysong/test/BDD ui integration/features/google-search.feature"
+  }
+]
