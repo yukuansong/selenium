@@ -1,104 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="shop-for-workwear;view-product-detail" tests="4" failures="1" skipped="3">
+    <testsuite name="login-gmm-solution;login-gmm-solution" tests="5" failures="0" skipped="0">
         <properties>
-            <property name="@workwear" value="true">
+            <property name="@login" value="true">
             </property>
-            <property name="URI" value="C:/Users/ysong/test/BDD ui integration/features/buy-workwear.feature">
+            <property name="URI" value="C:/Users/ysong/test/BDD ui integration/features/gmm-login.feature">
             </property>
         </properties>
-        <testcase name="Given I am on the Mammoth Workwear home page" classname="shop-for-workwear;view-product-detail" time="4.291887817">
-            <failure message="Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:65298">Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:65298
-    at ClientRequest.&lt;anonymous&gt; (C:\Users\ysong\test\BDD ui integration\node_modules\selenium-webdriver\http\index.js:238:15)
-    at emitOne (events.js:116:13)
-    at ClientRequest.emit (events.js:211:7)
-    at Socket.socketErrorListener (_http_client.js:387:9)
-    at emitOne (events.js:116:13)
-    at Socket.emit (events.js:211:7)
-    at emitErrorNT (internal/streams/destroy.js:64:8)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-From: Task: WebDriver.manage().window().maximize()
-    at thenableWebDriverProxy.schedule (C:\Users\ysong\test\BDD ui integration\node_modules\selenium-webdriver\lib\webdriver.js:815:17)
-    at Window.maximize (C:\Users\ysong\test\BDD ui integration\node_modules\selenium-webdriver\lib\webdriver.js:1590:25)
-    at new module.exports (C:\Users\ysong\test\BDD ui integration\runtime\chromeDriver.js:22:30)
-    at getDriverInstance (C:\Users\ysong\test\BDD ui integration\runtime\world.js:54:22)
-    at C:\Users\ysong\test\BDD ui integration\runtime\world.js:184:29
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)</failure>
+        <testcase name="Given I am on the GMM login page" classname="login-gmm-solution;login-gmm-solution" time="14.239929534">
         </testcase>
-        <testcase name="When I click navigation item &quot;Safety Boots&quot;" classname="shop-for-workwear;view-product-detail">
-            <skipped message="">
-            </skipped>
+        <testcase name="When I type the user name &quot;yukuan.song@gmail.com&quot;" classname="login-gmm-solution;login-gmm-solution" time="0.000729563">
         </testcase>
-        <testcase name="And I click product item &quot;Timberland Pro Euro Hiker 2G Safety Boots&quot;" classname="shop-for-workwear;view-product-detail">
-            <skipped message="">
-            </skipped>
+        <testcase name="And I type the password &quot;Mycode123456789!&quot;" classname="login-gmm-solution;login-gmm-solution" time="0.000387526">
         </testcase>
-        <testcase name="Then I should see product detail with title &quot;Timberland Pro Euro Hiker 2G Safety Boots&quot;" classname="shop-for-workwear;view-product-detail">
-            <skipped message="">
-            </skipped>
+        <testcase name="And I click the login button" classname="login-gmm-solution;login-gmm-solution" time="0.000391757">
+        </testcase>
+        <testcase name="Then I should get into the gmm landing page and see some results" classname="login-gmm-solution;login-gmm-solution" time="0.000631889">
         </testcase>
     </testsuite>
-    <testsuite name="searching-for-vote-cards-app;google-search-for-vote-cards-app" tests="2" failures="1" skipped="1">
+    <testsuite name="searching-for-vote-cards-app;google-search-for-vote-cards-app" tests="2" failures="0" skipped="0">
         <properties>
             <property name="@search" value="true">
             </property>
             <property name="URI" value="C:/Users/ysong/test/BDD ui integration/features/google-search.feature">
             </property>
         </properties>
-        <testcase name="When I search Google for &quot;itunes vote cards app&quot;" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="4.139036127">
-            <failure message="Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:65298">Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:65298
-    at ClientRequest.&lt;anonymous&gt; (C:\Users\ysong\test\BDD ui integration\node_modules\selenium-webdriver\http\index.js:238:15)
-    at emitOne (events.js:116:13)
-    at ClientRequest.emit (events.js:211:7)
-    at Socket.socketErrorListener (_http_client.js:387:9)
-    at emitOne (events.js:116:13)
-    at Socket.emit (events.js:211:7)
-    at emitErrorNT (internal/streams/destroy.js:64:8)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-From: Task: WebDriver.manage().window().maximize()
-    at thenableWebDriverProxy.schedule (C:\Users\ysong\test\BDD ui integration\node_modules\selenium-webdriver\lib\webdriver.js:815:17)
-    at Window.maximize (C:\Users\ysong\test\BDD ui integration\node_modules\selenium-webdriver\lib\webdriver.js:1590:25)
-    at new module.exports (C:\Users\ysong\test\BDD ui integration\runtime\chromeDriver.js:22:30)
-    at getDriverInstance (C:\Users\ysong\test\BDD ui integration\runtime\world.js:54:22)
-    at C:\Users\ysong\test\BDD ui integration\runtime\world.js:184:29
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)</failure>
+        <testcase name="When I search Google for &quot;itunes vote cards app&quot;" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="6.172439765">
         </testcase>
-        <testcase name="Then I should see &quot;Vote Cards&quot; in the results" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app">
-            <skipped message="">
-            </skipped>
+        <testcase name="Then I should see &quot;Vote Cards&quot; in the results" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="1.176030108">
         </testcase>
     </testsuite>
-    <testsuite name="searching-for-vote-cards-app;google-search-for-course-of-life-app" tests="2" failures="1" skipped="1">
+    <testsuite name="searching-for-vote-cards-app;google-search-for-course-of-life-app" tests="2" failures="0" skipped="0">
         <properties>
             <property name="@search" value="true">
             </property>
             <property name="URI" value="C:/Users/ysong/test/BDD ui integration/features/google-search.feature">
             </property>
         </properties>
-        <testcase name="When I search Google for &quot;CourseOf.Life&quot;" classname="searching-for-vote-cards-app;google-search-for-course-of-life-app" time="4.36233732">
-            <failure message="Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:65298">Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:65298
-    at ClientRequest.&lt;anonymous&gt; (C:\Users\ysong\test\BDD ui integration\node_modules\selenium-webdriver\http\index.js:238:15)
-    at emitOne (events.js:116:13)
-    at ClientRequest.emit (events.js:211:7)
-    at Socket.socketErrorListener (_http_client.js:387:9)
-    at emitOne (events.js:116:13)
-    at Socket.emit (events.js:211:7)
-    at emitErrorNT (internal/streams/destroy.js:64:8)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-From: Task: WebDriver.manage().window().maximize()
-    at thenableWebDriverProxy.schedule (C:\Users\ysong\test\BDD ui integration\node_modules\selenium-webdriver\lib\webdriver.js:815:17)
-    at Window.maximize (C:\Users\ysong\test\BDD ui integration\node_modules\selenium-webdriver\lib\webdriver.js:1590:25)
-    at new module.exports (C:\Users\ysong\test\BDD ui integration\runtime\chromeDriver.js:22:30)
-    at getDriverInstance (C:\Users\ysong\test\BDD ui integration\runtime\world.js:54:22)
-    at C:\Users\ysong\test\BDD ui integration\runtime\world.js:184:29
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)</failure>
+        <testcase name="When I search Google for &quot;CourseOf.Life&quot;" classname="searching-for-vote-cards-app;google-search-for-course-of-life-app" time="7.662658003">
         </testcase>
-        <testcase name="Then I should see some results" classname="searching-for-vote-cards-app;google-search-for-course-of-life-app">
-            <skipped message="">
-            </skipped>
+        <testcase name="Then I should see some results" classname="searching-for-vote-cards-app;google-search-for-course-of-life-app" time="1.400305225">
         </testcase>
     </testsuite>
 </testsuites>

@@ -2,15 +2,17 @@ module.exports = function () {
 
     this.When(/^I search Google for "([^"]*)"$/, function (searchQuery) {
 
-        return helpers.loadPage('http://www.google.com').then(function() {
-
+        return helpers.loadPage('http://www.google.com').then(function(value) {
+console.log("======================================="+searchQuery);
             // use a method on the page object which also returns a promise
             return page.googleSearch.preformSearch(searchQuery);
+        }, function(error){
+            console.log("================error================"+error);
         });
     });
 
     this.Then(/^I should see "([^"]*)" in the results$/, function (keywords) {
-
+console.log("=================results: ======"+keywords);
         // resolves if an item on the page contains text
         return driver.wait(until.elementsLocated(by.partialLinkText(keywords)), 10000);
     });
@@ -24,7 +26,9 @@ module.exports = function () {
             return driver.findElements(by.css('div.g'));
         })
         .then(function (elements) {
+console.log("======================element ====="+elements[0]);
 
+console.log("============lenghth of the elements is :"+elements.length);
             // verify this element has children
             expect(elements.length).to.not.equal(0);
         });
