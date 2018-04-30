@@ -14,37 +14,37 @@
             "name": "I am on the GMM login page",
             "result": {
               "status": "passed",
-              "duration": 14239929534
+              "duration": 28700094148
             },
             "line": 6,
             "match": {
-              "location": "integration\\step-definitions\\gmm-login-steps.js:3"
+              "location": "integration\\step-definitions\\gmm-login-steps.js:4"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I type the user name \"yukuan.song@gmail.com\"",
+            "name": "I type the user name \"testuser2@test.com\"",
             "result": {
               "status": "passed",
-              "duration": 729563
+              "duration": 173190899
             },
             "line": 7,
             "match": {
-              "location": "integration\\step-definitions\\gmm-login-steps.js:9"
+              "location": "integration\\step-definitions\\gmm-login-steps.js:10"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "I type the password \"Mycode123456789!\"",
+            "name": "I type the password \"pass\"",
             "result": {
               "status": "passed",
-              "duration": 387526
+              "duration": 81274639
             },
             "line": 8,
             "match": {
-              "location": "integration\\step-definitions\\gmm-login-steps.js:15"
+              "location": "integration\\step-definitions\\gmm-login-steps.js:16"
             }
           },
           {
@@ -53,11 +53,11 @@
             "name": "I click the login button",
             "result": {
               "status": "passed",
-              "duration": 391757
+              "duration": 58380291
             },
             "line": 9,
             "match": {
-              "location": "integration\\step-definitions\\gmm-login-steps.js:21"
+              "location": "integration\\step-definitions\\gmm-login-steps.js:22"
             }
           },
           {
@@ -66,11 +66,11 @@
             "name": "I should get into the gmm landing page and see some results",
             "result": {
               "status": "passed",
-              "duration": 631889
+              "duration": 84498614
             },
             "line": 10,
             "match": {
-              "location": "integration\\step-definitions\\gmm-login-steps.js:25"
+              "location": "integration\\step-definitions\\gmm-login-steps.js:26"
             }
           },
           {
@@ -78,7 +78,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 438699183
+              "duration": 613296120
             },
             "hidden": true,
             "match": {
@@ -108,38 +108,51 @@
     "uri": "C:/Users/ysong/test/BDD ui integration/features/gmm-login.feature"
   },
   {
-    "description": "  As an internet user\n  In order to find out more about the itunes vote cards app\n  I want to be able to search for information about the itunes vote cards app",
+    "description": "  I can register an account in GMM",
     "elements": [
       {
-        "id": "searching-for-vote-cards-app;google-search-for-vote-cards-app",
+        "id": "register-a-non-fema-user;register-a-non-fema-user",
         "keyword": "Scenario",
-        "line": 7,
-        "name": "Google search for vote cards app",
+        "line": 5,
+        "name": "register a non-FEMA user",
         "steps": [
           {
             "arguments": [],
-            "keyword": "When ",
-            "name": "I search Google for \"itunes vote cards app\"",
+            "keyword": "Given ",
+            "name": "I am on the GMM login page again",
             "result": {
               "status": "passed",
-              "duration": 6172439765
+              "duration": 9273848177
+            },
+            "line": 6,
+            "match": {
+              "location": "integration\\step-definitions\\gmm-register-steps.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click the Register button",
+            "result": {
+              "status": "passed",
+              "duration": 78402223
+            },
+            "line": 7,
+            "match": {
+              "location": "integration\\step-definitions\\gmm-register-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see the registration page",
+            "result": {
+              "status": "passed",
+              "duration": 36817775
             },
             "line": 8,
             "match": {
-              "location": "integration\\step-definitions\\google-search-steps.js:3"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should see \"Vote Cards\" in the results",
-            "result": {
-              "status": "passed",
-              "duration": 1176030108
-            },
-            "line": 9,
-            "match": {
-              "location": "integration\\step-definitions\\google-search-steps.js:14"
+              "location": "integration\\step-definitions\\gmm-register-steps.js:13"
             }
           },
           {
@@ -147,7 +160,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 7031881
+              "duration": 7499806
             },
             "hidden": true,
             "match": {
@@ -157,76 +170,23 @@
         ],
         "tags": [
           {
-            "name": "@search",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "searching-for-vote-cards-app;google-search-for-course-of-life-app",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Google search for course of life app",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I search Google for \"CourseOf.Life\"",
-            "result": {
-              "status": "passed",
-              "duration": 7662658003
-            },
-            "line": 12,
-            "match": {
-              "location": "integration\\step-definitions\\google-search-steps.js:3"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should see some results",
-            "result": {
-              "status": "passed",
-              "duration": 1400305225
-            },
-            "line": 13,
-            "match": {
-              "location": "integration\\step-definitions\\google-search-steps.js:20"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 10210015
-            },
-            "hidden": true,
-            "match": {
-              "location": "integration\\runtime\\world.js:221"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@search",
+            "name": "@registeration",
             "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "searching-for-vote-cards-app",
+    "id": "register-a-non-fema-user",
     "keyword": "Feature",
     "line": 2,
-    "name": "Searching for vote cards app",
+    "name": "register a non-FEMA user",
     "tags": [
       {
-        "name": "@search",
+        "name": "@registeration",
         "line": 1
       }
     ],
-    "uri": "C:/Users/ysong/test/BDD ui integration/features/google-search.feature"
+    "uri": "C:/Users/ysong/test/BDD ui integration/features/gmm-registration.feature"
   }
 ]

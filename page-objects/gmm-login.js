@@ -1,28 +1,27 @@
+
 module.exports = {
 
     url: 'https://dev.d.gmmsparta.com',
 
     elements: {
-        menuItem: 'nav[role="navigation"] ul li a',
-        productItem: 'main .pitem a'
+        key: "value"
     },
 
     enterUserName: function (userName) {
-        driver.findElement(By.name("username")).sendKeys(userName);
+        return driver.findElement(By.name("username")).sendKeys(userName);
     },
 
     enterPassWord: function (passWord) {
-        driver.findElement(By.name("password")).sendKeys(passWord);
+        return driver.findElement(By.name("password")).sendKeys(passWord);
     },
 
     clickLogin: function () {
-        driver.findElement(By.xpath("//Button[text() = 'Login']")).click();
+        return driver.findElement(By.xpath("//Button[text() = 'Login']")).click();
     },
 
-    doNothing: function () {
+    performLogin: function () {
         driver.findElement(By.name("password")).getAttribute("value").then(function (value) {
-            console.log("==============value ======" + value);
-            expect(value).equal("Mycode123456789!");
+            expect(value).equal(shared.testData.password);
         });
 
         driver.wait(until.elementsLocated(By.name('content')), 10000).then(function () {
@@ -31,8 +30,19 @@ module.exports = {
             return driver.findElements(By.name('content'));
         })
             .then(function (elements) {
-                console.log("======================found the element ====="+elements);
+                console.log("======================found the element =====" + elements);
                 expect(elements.length).equal(1);
+            });
+        this.do508Check();
+    },
+
+    do508Check: function () {
+
+        //call aXe for accessability testing(508)
+        var AxeBuilder = require('axe-webdriverjs');
+        AxeBuilder(driver)
+            .analyze(function (results) {
+                console.log(results);
             });
     }
 };

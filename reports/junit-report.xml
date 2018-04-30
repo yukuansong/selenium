@@ -7,39 +7,29 @@
             <property name="URI" value="C:/Users/ysong/test/BDD ui integration/features/gmm-login.feature">
             </property>
         </properties>
-        <testcase name="Given I am on the GMM login page" classname="login-gmm-solution;login-gmm-solution" time="14.239929534">
+        <testcase name="Given I am on the GMM login page" classname="login-gmm-solution;login-gmm-solution" time="28.700094148">
         </testcase>
-        <testcase name="When I type the user name &quot;yukuan.song@gmail.com&quot;" classname="login-gmm-solution;login-gmm-solution" time="0.000729563">
+        <testcase name="When I type the user name &quot;testuser2@test.com&quot;" classname="login-gmm-solution;login-gmm-solution" time="0.173190899">
         </testcase>
-        <testcase name="And I type the password &quot;Mycode123456789!&quot;" classname="login-gmm-solution;login-gmm-solution" time="0.000387526">
+        <testcase name="And I type the password &quot;pass&quot;" classname="login-gmm-solution;login-gmm-solution" time="0.081274639">
         </testcase>
-        <testcase name="And I click the login button" classname="login-gmm-solution;login-gmm-solution" time="0.000391757">
+        <testcase name="And I click the login button" classname="login-gmm-solution;login-gmm-solution" time="0.058380291">
         </testcase>
-        <testcase name="Then I should get into the gmm landing page and see some results" classname="login-gmm-solution;login-gmm-solution" time="0.000631889">
-        </testcase>
-    </testsuite>
-    <testsuite name="searching-for-vote-cards-app;google-search-for-vote-cards-app" tests="2" failures="0" skipped="0">
-        <properties>
-            <property name="@search" value="true">
-            </property>
-            <property name="URI" value="C:/Users/ysong/test/BDD ui integration/features/google-search.feature">
-            </property>
-        </properties>
-        <testcase name="When I search Google for &quot;itunes vote cards app&quot;" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="6.172439765">
-        </testcase>
-        <testcase name="Then I should see &quot;Vote Cards&quot; in the results" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="1.176030108">
+        <testcase name="Then I should get into the gmm landing page and see some results" classname="login-gmm-solution;login-gmm-solution" time="0.084498614">
         </testcase>
     </testsuite>
-    <testsuite name="searching-for-vote-cards-app;google-search-for-course-of-life-app" tests="2" failures="0" skipped="0">
+    <testsuite name="register-a-non-fema-user;register-a-non-fema-user" tests="3" failures="0" skipped="0">
         <properties>
-            <property name="@search" value="true">
+            <property name="@registeration" value="true">
             </property>
-            <property name="URI" value="C:/Users/ysong/test/BDD ui integration/features/google-search.feature">
+            <property name="URI" value="C:/Users/ysong/test/BDD ui integration/features/gmm-registration.feature">
             </property>
         </properties>
-        <testcase name="When I search Google for &quot;CourseOf.Life&quot;" classname="searching-for-vote-cards-app;google-search-for-course-of-life-app" time="7.662658003">
+        <testcase name="Given I am on the GMM login page again" classname="register-a-non-fema-user;register-a-non-fema-user" time="9.273848177">
         </testcase>
-        <testcase name="Then I should see some results" classname="searching-for-vote-cards-app;google-search-for-course-of-life-app" time="1.400305225">
+        <testcase name="When I click the Register button" classname="register-a-non-fema-user;register-a-non-fema-user" time="0.078402223">
+        </testcase>
+        <testcase name="Then I should see the registration page" classname="register-a-non-fema-user;register-a-non-fema-user" time="0.036817775">
         </testcase>
     </testsuite>
 </testsuites>
